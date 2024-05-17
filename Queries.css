@@ -1,0 +1,90 @@
+/* - Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
+/*  -> we always use em for media queries*/
+
+/* ********************************  */
+/* For Small Laptops(Below 1366px) ->  1366px/16px = 85.375em */
+/* ******************************** */
+@media (max-width: 85.375em) {
+}
+
+/* ********************************  */
+/* For Landscape Tablets(Below 1200px) ->  1200px/16px = 75em */
+/* ******************************** */
+
+@media (max-width: 75em) {
+  /* 9px/16px =  0.5625*/
+  /* font-size Adjustment */
+  html {
+    font-size: 56.25%;
+  }
+}
+
+/* ********************************  */
+/* For Tablet(Below 960px) ->  960px/16px = 60em */
+/* ******************************** */
+@media (max-width: 60em) {
+  /* 8px/16px =  0.5*/
+  /* font-size Adjustment */
+  html {
+    font-size: 50%;
+  }
+}
+
+/* ********************************  */
+/* For Small-Tablets(Below 760px) ->  760px/16px = 47.5em */
+/* ******************************** */
+@media (max-width: 47.5em) {
+  /* 7px/16px =  0.4375*/
+  html {
+    font-size: 43.75%;
+  }
+}
+
+/* ********************************  */
+/* For Phones(Below 560px) ->  560px/16px = 35em */
+/* ******************************** */
+@media (max-width: 35em) {
+  /* 6px/16px =  37.5*/
+  html {
+    font-size: 37.5%;
+  }
+  .product-card {
+    width: 50rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 35fr 80fr;
+  }
+  .product-card-img-box {
+    background-image: url(./images/image-product-mobile.jpg);
+    background-size: cover;
+  }
+  .product-card-subheading {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .product-card-heading {
+    font-size: 4rem;
+  }
+  .product-card-description {
+    font-size: 2.2rem;
+    font-weight: 500;
+  }
+  .product-card-price {
+    gap: 3rem;
+    margin-bottom: 2.4rem;
+  }
+  .new-price {
+    font-size: 4rem;
+  }
+  .old-price {
+    font-size: 2rem;
+  }
+  .btn {
+    padding: 1.5rem 2.5rem;
+  }
+}
